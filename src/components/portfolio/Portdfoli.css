@@ -1,0 +1,33 @@
+.profile-nav {
+    display: flex;
+    border: 2px solid red;
+    gap: 50px;
+    justify-content: center;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+.logo-img{
+padding-right: 700px;
+height: 500px;
+border-radius: 50%;
+}
+
+
+.profile-header {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding-left: 10px;
+   
+}
+.profile-main{
+ background-color: rgb(170, 29, 29);
+ height: 600px;
+}
+
+.profile-nav li a {
+    
+    text-decoration: none;
+
+}
