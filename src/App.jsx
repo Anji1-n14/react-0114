@@ -24,28 +24,9 @@ function App() {
 
   return (
     
-<div
->
-    {/* <h1>demo project</h1>
-    <ul>{people.map((per,index)=>(
-      <li key={index}>
-           {per.name}-{per.age} years old
-      </li>
-      
-    ))}
-    </ul>
-    <Task /> */}
     <div>
-      <Profile />
+       <Enquery />
     </div>
-    {/* {
-      <div>
-      <AboutUs />
-      </div>
-  // }  */}
-   <Enquery />
-    </div>
-  )
+      )
   }
-
-export default App;
+  export default App;
