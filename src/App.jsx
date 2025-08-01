@@ -7,6 +7,7 @@ import Profile from './components/portfolio/Portfolio.jsx';
 import AboutUs from './pages/AboutUs/AboutUs.jsx';
 import Enquery from './pages/Enquiry/Enquiry.jsx';
 import EnqueryUncontrolled from './pages/Enquiry/EnqueryUncontrolled.jsx';
+import EnqueryOptimization from './pages/Enquiry/EnquiryOptimization.jsx';
 
 function App() {
   //const [count, se  tCount] = useState(0)
@@ -15,7 +16,8 @@ function App() {
     
     <div>
        <Enquery />
-<EnqueryUncontrolled />
+       <EnqueryUncontrolled />
+       <EnqueryOptimization />
     </div>
       )
   }
