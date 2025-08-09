@@ -1,4 +1,7 @@
 import React from "react";
+import Header from "../../components/Header";
+import HeaderComponent from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 class AboutUs extends React.Component{
 
@@ -10,9 +13,10 @@ class AboutUs extends React.Component{
  render(){
     console.log("render");
     return(
-        <>
+        <div>
         <h1>HI about us</h1>
-        </>
+        </div>
+        
     )
         
     }
@@ -24,6 +28,7 @@ class AboutUs extends React.Component{
     componentDidUpdate(){
         console.log("componentDidUpdate"); 
     }
+    
 }
 
 export default AboutUs;
