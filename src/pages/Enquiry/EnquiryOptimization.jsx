@@ -1,14 +1,16 @@
 import { useState } from "react";
-
-const EnqueryOptimization = () => {
-  const [enquerydata, setEnquerydata] = useState({
+import axios from "axios";
+const enquery = {
     name: "",
     email: "",
     mobileNo: "",
     address: "",
-    enquerydapartment: "",
+    enquerydapartment: "tech",
     otherDepartment: "",
-  });
+  }
+
+const EnqueryOptimization = () => {
+  const [enquerydata, setEnquerydata] = useState(enquery);
 
   const [errorData, setErrorData] = useState({
     nameError: false,
@@ -17,7 +19,37 @@ const EnqueryOptimization = () => {
     addressError: false,
   });
 
-  const onSubmitForm = (e) => {
+  const onSubmitForm = async (e) => {
+    //prefered way
+    e.preventDefault();
+    try{
+      const res= await axios.post("https://jsonplaceholder.typicode.com/posts",enquerydata,{
+        headers: {
+      "Content-Type": "application/json"
+    },
+      });
+      alert("enquery submitted successfully");
+      setEnquerydata(enquery);
+    }catch(err){
+      console.log("error calling api",err);
+
+    }
+
+  //  M-2
+  //   axios.post("https://jsonplaceholder.typicode.com/posts",enquerydata)
+  //   .then(res=>console.log(res))
+  //   .catch(err=>console.log("error at ", err))
+  //  // M-1
+  //    fetch("https://jsonplaceholder.typicode.com/posts", {
+  //   method: "POST",
+  //   headers: {
+  //     "Content-Type": "application/json",
+  //   },
+  //   body: JSON.stringify(enquerydata),
+  // }).then((res)=>{console.log(res),
+  //return res.json()})
+  //.then(data => console.log(data))
+  // .catch((err)=>{console.log(err)})
     e.preventDefault();
     const formData = {
       name: enquerydata.name,
@@ -31,6 +63,8 @@ const EnqueryOptimization = () => {
     };
     console.log("form submitted:", formData);
   };
+
+   
 
   const inputChangeHandler = (e) => {
     e.preventDefault();

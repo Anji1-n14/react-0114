@@ -1,4 +1,7 @@
 import {useState } from "react";
+import Header from "../../components/Header";
+import HeaderComponent from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 const Enquery = () => {
 

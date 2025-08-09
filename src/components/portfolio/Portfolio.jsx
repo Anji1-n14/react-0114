@@ -1,8 +1,10 @@
-import './Portdfoli.css';
+import Footer from '../Footer/Footer';
+import HeaderComponent from '../Header/Header';
+import './Portfolio.css';
 const Profile =() =>{
     return(
         <>
-            
+           <HeaderComponent /> 
          <section className='profile-container' >
             
               <ul className="profile-nav">
@@ -33,6 +35,7 @@ const Profile =() =>{
                     </div>
                 </div>
          </section>
+         <Footer />
         </>
     )
 };
