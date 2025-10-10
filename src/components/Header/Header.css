@@ -1,15 +1,25 @@
-/* Wrapper for navbar */
-.navbar {
+/* New header wrapper */
+.header-wrapper {
+    
     display: flex;
-    justify-content: space-between;
-    list-style: none;
-    width: 100%;
+    align-items: center;
     margin: 60px auto;
     padding: 12px 20px;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Reuse navbar styles */
+.navbar {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
 }
 
 /* Link styles */

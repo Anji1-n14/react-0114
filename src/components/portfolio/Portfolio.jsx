@@ -4,7 +4,6 @@ import './Portfolio.css';
 const Profile =() =>{
     return(
         <>
-           <HeaderComponent /> 
          <section className='profile-container' >
             
               <ul className="profile-nav">
@@ -35,7 +34,6 @@ const Profile =() =>{
                     </div>
                 </div>
          </section>
-         <Footer />
         </>
     )
 };

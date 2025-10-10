@@ -1,11 +1,15 @@
 import './Card.css'
+import { Link } from 'react-router-dom';
 const Card = (props) =>{
     return(
     
     <div className={`card ${props.viewType.toLowerCase()}`}>
         <img src={props.image} alt={props.title} />
         <div className="card-content">
-        <h2 className="card-title">{props.title}</h2>
+       
+        <Link to={`/articles/${props.id}`}>
+          <h2 className="card-title">{props.title}</h2>
+        </Link>
         <p className="card-category">{props.category}</p>
         <p className="card-price">${props.price}</p>
         <p className="card-description">{props.description}</p>

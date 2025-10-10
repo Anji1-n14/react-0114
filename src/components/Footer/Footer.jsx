@@ -12,7 +12,7 @@ const Footer = () => {
         </ul>
       </div>
       <div style={{ textAlign: "center", color: "#666", fontSize: "14px" }}>
-        &copy; {new Date().getFullYear()} Your Company Name. All rights reserved.
+        &copy; {new Date().getFullYear()} React Trining . All rights reserved.
       </div>
     </footer>
   );

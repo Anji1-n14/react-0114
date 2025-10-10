@@ -97,7 +97,7 @@ const EnqueryOptimization = () => {
     if (fieldName === "address") {
       return fieldValue.length <= 256;
     }
-    return true; // default valid for non-validated fields
+    return true; 
   };
 
   return (
